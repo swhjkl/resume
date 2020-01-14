@@ -13,48 +13,59 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{沈炜}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{shenwei0824@gmail.com} \textperiodcentered\
+  \phone{(+86) 17788759927} \textperiodcentered\
+  \linkedin[Wei Shen]{https://www.linkedin.com/in/wei-shen-1a1197162/}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{中国科学院大学}, 北京}{2014 -- 2017}
+\textit{硕士}\ 核技术及应用
+\datedsubsection{\textbf{中国科学技术大学}, 安徽}{2010 -- 2014}
+\textit{学士}\ 核工程与核技术
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{腾讯} 广州}{2018年10月 -- 至今}
+\role{后台开发，框架开发，分布式系统}
+\begin{onehalfspacing}
+微信分布式队列（类kafka/pulsar）开发与维护
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+  \item 基于微信协程库 libco 和 RPC 框架实现高性能入队逻辑模块和出队消费框架
+  \item 使用微信分布式文件系统落地队列数据，根据队列需求定制化系统功能
+  \item 基于微信分布式锁服务（类Chubby）实现自动消费调度和消费偏移管理模块，实现At Least Once语义消费
+  \item 目前该队列已服务于微信内部实时日志数据转发、跨城最终一致存储、离线 mr 计算统计等项目
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+微信后台 RPC 框架开发与维护
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 日常业务特性开发，比如新增网关转发/定制化路由等功能
+  \item 运营系统特性开发，比如基于共享内存多阶hash表的打点上报系统
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{腾讯} 深圳}{2017年7月 -- 2018年10月}
+\role{后台开发，业务开发}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+QQ钱包/QQ卡券后台业务逻辑开发
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 基于RPC/KV/MySQL等内外部组件开发业务后台逻辑，如QQ钱包任务中心后台、QQ卡券首页后台、QQ 2018春节红包活动卡券侧后台
+\end{itemize}
+
+独立内容APP后台FEEDS流系统搭建
+\begin{itemize}
+  \item 基于腾讯云COS存储和内部框架实现一个APP的作品发布/管理/评论/点赞等模块，构建FEEDS系统完整功能
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{搜狗（实习）}}{2016年5月 -- 2016年8月}
+%\role{\LaTeX, Python}{个人项目}
+\begin{onehalfspacing}
+搜狗业务日志分析系统
+\begin{itemize}
+  \item 根据json定义的日志格式，使用Hadoop处理多种业务的日志，计算需要的结果存入HBase
+  \item 设计/开发网页，根据选择的查询条件将HBase中的数据通过表格、图像等方式进行展示
 \end{itemize}
 \end{onehalfspacing}
 
@@ -68,22 +79,22 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 熟悉基本数据结果与算法，了解计算机基本运行原理
+  \item 熟练掌握 C++ 编程，熟悉 Linux 环境与网络协议
+  \item 熟悉 paxos/raft 等一致性协议，对于 leveldb/分布式存储有一定的了解
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{腾讯五星优秀员工（TOP 10\%）}{2018 年 7 月}
+\datedline{\textit{腾讯五星优秀员工（TOP 10\%）}{2019 年 7 月}
 
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+%\section{\faInfo\ 其他}
+%% increase linespacing [parsep=0.5ex]
+%\begin{itemize}[parsep=0.5ex]
+%  \item 技术博客: http://blog.yours.me
+%  \item GitHub: https://github.com/username
+%  \item 语言: 英语 - 熟练(TOEFL xxx)
+%\end{itemize}
 
 %% Reference
 %\newpage
